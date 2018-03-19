@@ -18,12 +18,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onFoodTypeClick"
             android:text="Indian" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onFoodTypeClick"
             android:text="Mexican" />
 
         <RadioButton
@@ -31,6 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onFoodTypeClick"
             android:text="Chinese" />
     </RadioGroup>
 
@@ -47,18 +50,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onPriceClick"
             android:text="$" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onPriceClick"
             android:text="$$" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="onPriceClick"
             android:text="$$$" />
     </RadioGroup>
 
@@ -67,6 +73,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="41dp"
+        android:onClick="search"
         android:text="Find"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
@@ -75,8 +82,11 @@
         android:id="@+id/displayText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="113dp"
         android:text=""
+        android:textAlignment="center"
+        android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="334dp" />
+        app:layout_constraintTop_toBottomOf="@+id/searchButton" />
 
 </android.support.constraint.ConstraintLayout>
